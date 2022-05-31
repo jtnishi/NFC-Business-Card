@@ -3,6 +3,7 @@
 Using this space to document my trials and tests for making my own NFC Business Card without spending money on a professional one.
 
 ![Image showing my attempt at making a business card.](assets/MainImage.jpg)
+
 *Sample Business Cards I made for this exercise*
 
 [Testing Tapping](assets/TapDemo.mp4)
