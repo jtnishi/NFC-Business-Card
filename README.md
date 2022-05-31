@@ -13,6 +13,8 @@ Using this space to document my trials and tests for making my own NFC Business 
 * Print a label (or buy inkjet printable cards + tray for compatible printer) with the info/QR code and attach
 * Profit
 
+[Photoshop PSD template](assets/tested_layout.psd)
+
 ## Overview
 
 For a lot of us, getting normal business cards just ends up as trashcan waste in short order.  While they're useful for getting contact information, they also lose their utility once you have that information dumped into a contact book or notepad.  Really, their value is in the information on the card, not the card itself.  Confronted with this, people will usually just take a picture of the card with their smartphone.  After all, the smartphone is the modern contact book.
@@ -137,3 +139,7 @@ For this example, you will need:
         * You should get a confirmation.
 
 And that's it!
+
+## Questions/Suggestions?
+
+* [Open an issue!](https://github.com/jtnishi/NFC-Business-Card/issues/new)
