@@ -62,7 +62,7 @@ These cards do also have some disadvantages.
 
 ## The concept.
 
-The cards to use are known as **NTAG215** NFC PVC cards.  These cards are often used for copying/sharing Amiibos, and can often be found using some combination of "amiibo" and "NFC" on your favorite shopping websites.  They come in multiple forms, including small rounds and bigger hotel key sized cards. These bigger cards have a size very similar to a business card, so these are the cards we'll use.  Dimensionally, the ones I'm using are **85.5mm x 54mm x 0.8mm**, or about **3.37" x 2.13" x 0.03"**.
+The cards to use are known as **NTAG215** NFC PVC cards.  These cards are often used for copying/sharing Amiibos, and can often be found using some combination of "amiibo" and "NFC" on your favorite shopping websites.  They come in multiple forms, including small rounds and bigger hotel key sized cards. These bigger cards have a size very similar to a business card, so these are the cards we'll use.  Dimensionally, the ones I'm using are **85.5mm x 54mm x 0.8mm**, or about **3.37" x 2.13" x 0.03"**.  These cards have a rounded corner that I've measured to be about a **2mm (0.079in)** radius using a digital caliper.
 
 Price-wise, the cards are relatively affordable.  Non-printable ones can be obtained in smaller 25-packs for around $15 with fast shipping from US sellers.  They're also cheaply available from whichever Chinese marketplace you choose.  Basically, expect to pay around **30-60 cents US/card**, as of the writing of this document in mid-2022.
 
@@ -160,6 +160,31 @@ For this example, you will need:
 And that's it!
 
 ---
+
+## Photoshop Layout File, Exploded
+
+For ease of reference, I've exploded each layer of the template file I generated into a PNG file.  Each file is 1266px x 888px, and overlay one on top of the other in the PSD.  The file is meant to be used at **12px/mm**, or **120px/cm** (approximately **305px/in**). This yields an image size of **105.5mm x 74mm**, which is the size of the card plus a 1 cm bleed space.
+
+![Entire Layout](assets/00-EntireLayout.png)  
+*The full layout as seen in the PSD.*
+
+---
+
+![Primary Area](assets/01-PrimaryUseArea.png)  
+*Primary Area, basically the area of the card but with a 5mm margin.*
+
+![Corner Safe Inner Area](assets/02-CornerSafeInnerMaximum.png)  
+*Corner safe inner maximum area, accounting for the 2mm round corners.*
+
+![Card Area](assets/03-CardArea.png)  
+*The main area of the card, based on specs.*
+
+![Card Area](assets/04-BleedArea.png)  
+*The card area with a 10mm bleed, and the base size of the card.*
+
+
+---
+
 
 ## Questions/Suggestions?
 
