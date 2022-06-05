@@ -2,12 +2,15 @@
 
 Using this space to document my trials and tests for making my own NFC Business Card without spending money on a professional one.
 
+---
+
 ![Image showing my attempt at making a business card.](assets/MainImage.jpg)
 
 *Sample Business Cards I made for this exercise*
 
 [Testing Tapping](assets/TapDemo.mp4)
 
+---
 
 ## Making these, TL;DR:
 
@@ -15,9 +18,12 @@ Using this space to document my trials and tests for making my own NFC Business 
 * Use **NFC Tools** on App Store ([iOS](https://apps.apple.com/us/app/nfc-tools/id1252962749)/[Android](https://play.google.com/store/apps/details?id=com.wakdev.wdnfc&hl=en_US&gl=US)) to write a [linktree](https://www.linktree.com)/other URL to it
 * Use a QR code generator (eg. [QRCode Monkey](https://www.qrcode-monkey.com/)) to make a URL or contact QR code.
 * Print a label (or buy inkjet printable cards + tray for compatible printer) with the info/QR code and attach
-* Profit
+* Profit!
 
 [Photoshop PSD template](assets/tested_layout.psd)
+[Photoshop PSD template v2](assets/tested_layout_v2.psd)
+
+---
 
 ## Overview
 
@@ -66,6 +72,8 @@ The data that can be written to these cards are limited, around 492 bytes. While
 
 As a backup to the NFC data, it will also make sense to add a QR code to the front of the card that has either identical or otherwise more detailed information.  Generating a QR code is as easy as visiting a website such as [QRCode Monkey](https://www.qrcode-monkey.com/) to generate a QR code for either your URL, or for a `VCARD/MECARD` format contact card, etc.  This can be used in case the card fails, or if you're trying to give your contact information to someone with a smartphone without NFC.
 
+---
+
 ## Basic Instructions
 
 ### Supplies
@@ -77,7 +85,7 @@ For this example, you will need:
 * **An NFC capable smartphone**.  Most current and recent iPhones have this built in.  Many Android phones will have this as well.  If you have Apple Pay/Google Pay on your phone, you have an NFC chip.
 * **The NFC Tools app**.  [iOS App Store](https://apps.apple.com/us/app/nfc-tools/id1252962749)/[Google Play Store](https://play.google.com/store/apps/details?id=com.wakdev.wdnfc&hl=en_US&gl=US).  While this app has a pro version, the free version is all we're going to need to both program the card, lock/password protect it, and confirm the card works correctly.
 * **A website with the information we want to share**.  This can be a [LinkTree](https://linktr.ee/) if you have many links to share. Or a simple social network link such as a [LinkedIn](https://www.linkedin.com) page or [Twitter](https://www.twitter.com) user profile or similar.  Or if you have your own website, even better.
-* **For nicer general cards, a set of labels and a printer that can print on them**  The labels should ideally be the same size or larger than the cards, if you want to go edge-to-edge. I used these [adhesive name tag labels on Amazon](https://www.amazon.com/gp/product/B084PZ2BN4) that cost me $7 with free prime shipping to the door.  However, I'd probably recommend getting labels that are a bit bigger, just to make sure you have plenty of bleed space for your design.  These labels had plenty of bleed room on the width side, but the labels were only just long enough to cover the card.  Most companies will provide a website that will include templates for a word processor to print on the labels correctly.
+* **For nicer general cards, a set of labels and a printer that can print on them**  The labels should ideally be the same size or larger than the cards, if you want to go edge-to-edge. I used these [adhesive name tag labels on Amazon](https://www.amazon.com/gp/product/B084PZ2BN4) that cost me $7 with free prime shipping to the door.  However, I'd probably recommend getting labels that are a bit bigger, just to make sure you have plenty of bleed space for your design.  (**Update: I've had good luck with these [larger 3 1/2" by 5" labels on Amazon](https://www.amazon.com/gp/product/B08K3MKTKC) as well.  I have an updated template to account.**) These labels had plenty of bleed room on the width side, but the labels were only just long enough to cover the card.  Most companies will provide a website that will include templates for a word processor to print on the labels correctly.
   * Alternative: if you have an **inkjet printer** that is compatible with the inkjet printable cards, a **PVC card tray**. Example: [this tray for certain Canon printers on Amazon](https://www.amazon.com/Inkjet-Card-Tray-Canon-Printers/dp/B00P25H0BA).
 * **For labels, Trimming blade.** I used a basic precision knife blade to trim away the label, but you can also use scissors.
 * **(Optional) Lamination.**  Since these are meant to be long use cards, it makes sense to try to laminate them. From light testing, it does appear that the NFC tag can be read through basic plastic sheeting, so a lamination should be useful to help preserve the longevity of the card.
@@ -85,15 +93,22 @@ For this example, you will need:
 
 ### Steps
 
+#### Making the Card Design
+
 1. **Figure out what contact information you're going to want to share, and prepare the information.**
     * For the NFC portion of the card, for simplicity, you want the information to be a single simple URL or URI.  This means either a single website link, or a single email address, a single telephone number, etc.  If you need to share multiple pieces of information, you may want to set up a LinkTree page.  If you want to share multiple basic pieces of contact information, you may want to encode it in the QR code.  More complicated information on the NFC card will otherwise mean your recipients will need to have special apps on their phone, and that just complicates matters.
     * For the QR code portion of the card, you can either choose to keep the same information, or you can put more complicated information. In most cases, iOS and Android phones can read information in somewhat more complex formats without requiring any 3rd party apps.  In particular, contact card information can be stored in a QR code to be saved in a person's contacts.
 2. **Generate the QR code you will want to use for the card.**  [QRCode Monkey](https://www.qrcode-monkey.com/) works for an online site to do this. You can also find a number of other sites online.  Alternatively, you can generate a QR code using software such as [Zint](https://zint.org.uk/) or even by using any of a number of QR code generation libraries for various programming languages.
-3. **Design and print your label, according to the label maker's instructions.**  Don't forget to include your QR code!  You can probably use a basic business card template to start for this.  Alternatively, get fancy.  Or, if you're lazy, you can go as simple as just printing out the QR code.  For a prototype, we basically just printed a QR code and taped it on the card.  It's not fancy, but it works!
-    * For the purposes of this example, I created a [Photoshop template](assets/tested_layout.psd) that contained the dimensions of the card itself, plus the dimensions of the label.  This gave me an idea of how the design would lay out, and where I could fit things in for the bleed to work correctly.  I then exported the image out from Photoshop and into LibreOffice, brought the image in over the template, resized the image to match the settings I had in the original template, and then printed a test sheet to make sure that the design would correctly print over the right place in the labels, as well as fit correctly for the card.
-    * Hint: Most designers for print targets know to let the design bleed a bit to make sure you can get edge to edge printing.
-    * **Alternative: print on your card using the printer.** Follow the tray maker's instructions for installation, and then print on the card. I definitely recommend doing a few test runs on paper before committing to this.
-4. **Attach the label from the previous step.** I aligned the label under the card, and then put the label on.  I then cleaned the edges using a precision knife blade, just to keep the edges as clean as possible.
+3. Pick your option:
+    * **Design and print your label, according to the label maker's instructions.**  Don't forget to include your QR code!  You can probably use a basic business card template to start for this.  Alternatively, get fancy.  Or, if you're lazy, you can go as simple as just printing out the QR code.  For a prototype, we basically just printed a QR code and taped it on the card.  It's not fancy, but it works!
+        * For the purposes of this example, I created a [Photoshop template](assets/tested_layout.psd) that contained the dimensions of the card itself, plus the dimensions of the label.  This gave me an idea of how the design would lay out, and where I could fit things in for the bleed to work correctly.  I then exported the image out from Photoshop and into LibreOffice, brought the image in over the template, resized the image to match the settings I had in the original template, and then printed a test sheet to make sure that the design would correctly print over the right place in the labels, as well as fit correctly for the card.
+        * ***Update: I found a set of larger 3 1/2" by 5" labels on Amazon that are also reasonably priced, and should give far more bleed room to work with.  I've added a new label layout [Photoshop template V2](assets/tested_layout_v2.psd) that should work nicely with larger labels. Just make sure to size the output image accordingly.***
+        * Hint: Most designers for print targets know to let the design bleed a bit to make sure you can get edge to edge printing.
+    * **Alternative: for tray based setups with inkjet compatible NFC cards, print on your card using the printer.** Follow the tray maker's instructions for installation, and then print on the card. I definitely recommend doing a few test runs on paper before committing to this.
+4. **(For Label Printed Cards) Attach the label from the previous step.** I aligned the label under the card, and then put the label on.  I then cleaned the edges using a precision knife blade, just to keep the edges as clean as possible.
+
+#### Programming the Card
+
 5. **If you have disabled NFC on your phone, enable it.** This varies from phone to phone.
 6. **Launch NFC Tools and create the information to write to the card.**
     * Go to **Write**
@@ -143,6 +158,8 @@ For this example, you will need:
         * You should get a confirmation.
 
 And that's it!
+
+---
 
 ## Questions/Suggestions?
 
