@@ -23,6 +23,8 @@ Using this space to document my trials and tests for making my own NFC Business 
 [Photoshop PSD template](assets/tested_layout.psd)  
 [Photoshop PSD template v2](assets/tested_layout_v2.psd)
 
+A quick search shows a [similar writeup on Instructables](https://www.instructables.com/Digital-Business-Card-With-NFC/) as well. The method is pretty much the same for the basics.
+
 ---
 
 ## Overview
