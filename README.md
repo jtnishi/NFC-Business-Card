@@ -20,7 +20,7 @@ Using this space to document my trials and tests for making my own NFC Business 
 * Print a label (or buy inkjet printable cards + tray for compatible printer) with the info/QR code and attach
 * Profit!
 
-[Photoshop PSD template](assets/tested_layout.psd)
+[Photoshop PSD template](assets/tested_layout.psd)  
 [Photoshop PSD template v2](assets/tested_layout_v2.psd)
 
 ---
