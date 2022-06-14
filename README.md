@@ -184,6 +184,22 @@ For ease of reference, I've exploded each layer of the template file I generated
 ![Card Area](assets/04-BleedArea.png)  
 *The card area with a 10mm bleed, and the base size of the card.*
 
+---
+
+## Other Notes
+
+* For carrying around the card, it's good to think of it as similar to both an NFC ID card or as a Transit pass card, similar to ones used by most metro transit systems. This should help with finding appropriate holders. As noted in the Photoshop diagram, the cards I use in my example are **85.5mm x 54mm x 0.8mm**, or about **3.37" x 2.13" x 0.03"**.  That should help for sizing.
+* **Be careful with putting any holes in the card!!**  Most of these cards have an NFC chip that resides in the card, and an antenna wire that runs around the periphery. The cards I used in my example had a loop of wire running about 5-8mm from each edge of the card.  Damaging the wire or the chip will likely cause the NFC function to fail.  If you want to try to find the wires, you can shine a bright flashlight behind the card to see the traces, but it needs to be fairly bright.  I was able to use both a fairly powerful mini LED flashlight, as well as my phone flashlight, and could see the traces.
+
+
+![Chip and antenna loop](assets/CardWires01.jpg)  
+*Showing the chip itself and the antenna loop start.  This is a continuous loop around the edge of the card*  
+
+![Corner of antenna loop](assets/CardWires02.jpg)  
+*One of the corners of the antenna loop. Note that in this card, spacing is uneven between short edge and long edge.*  
+
+![Corner of antenna loop](assets/CardWires03.jpg)  
+*Another showing of the corner of the antenna loop.*  
 
 ---
 
